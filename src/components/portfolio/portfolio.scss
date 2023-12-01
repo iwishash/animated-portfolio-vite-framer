@@ -1,0 +1,79 @@
+.portfolio {
+  position: relative;
+  .title {
+    font-size: 2.5rem;
+    color: orange;
+    position: sticky;
+    text-align: center;
+    padding-top: 3.2rem;
+    top: 0;
+    left: 0;
+
+    .progressbar {
+      height: 0.4rem;
+      background-color: white;
+    }
+  }
+
+  .items {
+    display: flex;
+    flex-direction: column;
+    .item {
+      .container {
+        width: 100%;
+        height: 100%;
+
+        .wrapper {
+          max-width: 1336px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: 3rem;
+          margin: auto;
+          height: 100%;
+          overflow: hidden;
+
+          img {
+            flex: 1;
+            height: 50%;
+            object-fit: cover;
+            border-radius: 0.75rem;
+          }
+          .text {
+            flex: 1;
+            height: 50%;
+            display: flex;
+            flex-direction: column;
+            // align-items: center;
+            justify-content: space-around;
+
+            h2 {
+              font-size: 2.5rem;
+            }
+            p {
+              font-size: 1.2rem;
+              //   text-align: center;
+              color: gray;
+              padding-bottom: 6rem;
+              margin-top: -4rem;
+            }
+            button {
+              padding: 0.7rem 3.5rem;
+              width: 40%;
+              border: none;
+              border-radius: 0.5rem;
+              background-color: orange;
+              font-size: 1.2rem;
+              cursor: pointer;
+              transition: all 0.3s ease;
+
+              &:hover {
+                background-color: #ff8c00;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

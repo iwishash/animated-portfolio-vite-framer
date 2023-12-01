@@ -1,0 +1,95 @@
+.services {
+  background: linear-gradient(180deg, #0c0c1d, #111132);
+  padding-bottom: 5rem;
+  height: 100%;
+
+  .wrapper {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .textContainer {
+      flex: 1;
+      align-self: flex-end;
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+
+      p {
+        font-size: 1.25rem;
+        font-weight: 200;
+        color: gray;
+        text-align: right;
+      }
+
+      hr {
+        width: 31.25rem;
+        border: none;
+        border-top: 0.6px solid gray;
+      }
+    }
+
+    .titleContainer {
+      flex: 2;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1rem;
+
+      .title {
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+
+        h1 {
+          font-size: 6rem;
+          font-weight: 100;
+
+          b:hover {
+            color: orange;
+          }
+        }
+
+        img {
+          width: 18.75rem;
+          height: 6.25rem;
+          border-radius: 3.12rem;
+          object-fit: cover;
+        }
+
+        button {
+          width: 18.75rem;
+          height: 6.25rem;
+          border-radius: 3.12rem;
+          font-size: 1.5rem;
+          border: none;
+          background: orange;
+          cursor: pointer;
+        }
+      }
+    }
+
+    .listContainer {
+      flex: 2;
+      max-width: 1336px;
+      margin: auto;
+      display: flex;
+
+      .box {
+        padding: 3.12rem;
+        border: 0.5px solid gray;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        button {
+          border: none;
+          padding: 0.75rem 1.5rem;
+          background: orange;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
